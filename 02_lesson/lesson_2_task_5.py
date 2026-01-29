@@ -1,4 +1,4 @@
-#Месяц — сезон
+# Месяц — сезон
 
 def month_to_season(month):
     if month in [12, 1, 2]:
@@ -11,6 +11,7 @@ def month_to_season(month):
         return "Осень"
     else:
         return "Неверный номер месяца"
+
 
 print(month_to_season(2))
 print(month_to_season(5))
