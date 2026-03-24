@@ -2,9 +2,9 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
 
-from pages_ptactice.MainPage import MainPage
-from pages_ptactice.ResultPage import ResultPage
-from pages_ptactice.CartPage import CartPage
+from pages_practice.MainPage import MainPage
+from pages_practice.ResultPage import ResultPage
+from pages_practice.CartPage import CartPage
 
 
 def test_cart_counter():
