@@ -1,6 +1,6 @@
 import pytest
 from selenium import webdriver
-from Pages.CalcPage import CalcPage
+from pages.calcPage import CalcPage
 
 @pytest.fixture
 def driver():

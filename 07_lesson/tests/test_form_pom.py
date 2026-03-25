@@ -1,6 +1,6 @@
 import pytest
 from selenium import webdriver
-from Pages.FormPage import FormPage
+from pages.formPage import FormPage
 
 @pytest.fixture
 def driver():

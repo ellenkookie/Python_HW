@@ -2,10 +2,10 @@ import pytest
 from selenium import webdriver
 from selenium.webdriver.firefox.service import Service as FirefoxService
 from webdriver_manager.firefox import GeckoDriverManager
-from Pages.Shop_LoginPage import LoginPage
-from Pages.Shop_MainPage import MainPage
-from Pages.Shop_CartPage import CartPage
-from Pages.Shop_CheckoutPage import CheckoutPage
+from pages.shop_LoginPage import LoginPage
+from pages.shop_MainPage import MainPage
+from pages.shop_CartPage import CartPage
+from pages.shop_CheckoutPage import CheckoutPage
 
 @pytest.fixture
 def driver():
