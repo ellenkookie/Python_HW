@@ -2,14 +2,20 @@ import requests
 import pytest
 
 base_url = "https://ru.yougile.com/api-v2"
+try:
+    from config import LOGIN, PASSWORD, COMPANY_ID
+except ImportError:
+    LOGIN = "your_email@example.com"
+    PASSWORD = "your_password"
+    COMPANY_ID = "your_company_id"
 
 @pytest.fixture(scope="session")
 def auth_headers():
     #Получить токен
     payload = {
-        "login": "your_login",
-        "password": "your_password",
-        "companyId": "your_companyID"
+        "login": LOGIN,
+        "password": PASSWORD,
+        "companyId": COMPANY_ID
     }
 
     resp = requests.post(f"{base_url}/auth/keys/get", json=payload)
