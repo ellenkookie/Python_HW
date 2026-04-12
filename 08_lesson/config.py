@@ -1,0 +1,3 @@
+LOGIN = "elenhayro2000@gmail.com"
+PASSWORD = "7_kMPA2TrLxKPRe"
+COMPANY_ID = "182f1486-63d4-4903-b80f-0b0a9449b205"
